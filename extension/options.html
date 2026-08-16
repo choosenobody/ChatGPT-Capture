@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChatGPT Capture Settings</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; }
+    label { display: block; margin: 18px 0 6px; font-weight: 600; }
+    input[type=text], input[type=password] { width: 100%; box-sizing: border-box; padding: 10px; }
+    button { margin-top: 20px; padding: 10px 16px; }
+    #status { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h1>ChatGPT Capture</h1>
+  <p>Conversation turns are sent only to the endpoint you configure.</p>
+
+  <label for="endpoint">Hermes endpoint base URL</label>
+  <input id="endpoint" type="text" placeholder="https://hermes.example.com" />
+
+  <label for="token">Bearer token</label>
+  <input id="token" type="password" autocomplete="off" />
+
+  <label><input id="enabled" type="checkbox" /> Enable capture</label>
+
+  <button id="save">Save</button><span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>
