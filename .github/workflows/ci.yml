@@ -27,3 +27,7 @@ jobs:
           node --check extension/content.js
           node --check extension/options.js
           node --check extension/service-worker.js
+      - name: Syntax-check Hermes helpers
+        run: |
+          python -m py_compile hermes/collect-idle-conversations.py hermes/prune-extracted.py
+          bash -n hermes/setup-cron.sh
