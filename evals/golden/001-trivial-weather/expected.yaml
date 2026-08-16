@@ -1,0 +1,20 @@
+# Case 001 — Trivial weather query
+# Trivial: no mental model, no reusable mechanism, no decision impact.
+# Must not create a learning, must not create an evergreen.
+level: extractor
+material_learning: false
+expected_learning_count: { min: 0, max: 0 }
+expected_action: [no_note]
+expected_belief_change: unchanged
+evergreen:
+  expected: false
+forbidden:
+  - create_learning
+  - create_evergreen
+  - transient_numbers
+hard_fail_conditions:
+  - trivial_evergreen
+description: |
+  Two turns of weather-forecast chatter. Nothing here remains useful
+  6-24 months from now. If the extractor creates an inbox note, that
+  is a precision miss. If it writes an evergreen, that is a hard-fail.

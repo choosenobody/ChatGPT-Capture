@@ -1,0 +1,19 @@
+level: librarian
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [move_to_learnings, update_entity]
+expected_belief_change: reversed
+expected_entities: [IndustrialCo]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - duplicate_note
+hard_fail_conditions:
+  - silent_overwrite
+description: |
+  vault_before/ has a `IndustrialCo margin expansion` note with
+  belief_change=new, confidence 70. The new evidence is a
+  reclassification, which changes the *claim* itself. Direction
+  must be `reversed` and history must be preserved.

@@ -1,0 +1,18 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [telco, ARPU, pricing]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: true
+forbidden:
+  - hypothesis_to_fact
+hard_fail_conditions:
+  - hypothesis_promoted
+description: |
+  The conversation contains a HYPOTHESIS that must be saved with
+  explicit epistemic_kind=HYPOTHESIS. Promoted to evergreen or
+  written as fact is a HARD-FAIL.

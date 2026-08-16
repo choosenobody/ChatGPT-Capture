@@ -1,0 +1,18 @@
+level: librarian
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [move_to_learnings, update_entity]
+expected_belief_change: weakened
+expected_entities: [Tencent]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - duplicate_note
+hard_fail_conditions:
+  - silent_overwrite
+description: |
+  vault_before/ already has the strengthened Tencent note at
+  confidence 70. The new conversation updates to 65 with
+  direction `weakened`. Prior history must be preserved.

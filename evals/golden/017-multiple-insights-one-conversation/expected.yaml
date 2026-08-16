@@ -1,0 +1,18 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 3, max: 4 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [SaaS, churn, retention, pricing]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - full_conversation_summary
+  - duplicate_note
+description: |
+  Three distinct insights. They must remain separable. The extractor
+  must NOT collapse them into a single summary. A clean run produces
+  3 inbox notes (one per insight). A linking evergreen is optional
+  but not required at L1.

@@ -1,0 +1,18 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 1, max: 2 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [consumer_staples, demand, contradiction]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: true
+forbidden:
+  - duplicate_note
+  - hypothesis_to_fact
+description: |
+  Two competing claims must both be preserved. A correct response
+  is either (a) two notes or (b) one note with both claims + a
+  resolution-evidence section. A response that deletes Claim A in
+  favour of Claim B is a precision + epistemic miss.

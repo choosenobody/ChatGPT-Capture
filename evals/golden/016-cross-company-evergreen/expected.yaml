@@ -1,0 +1,19 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 1, max: 2 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [channel_economics, Moutai, MIXUE, telecom]
+expected_entities: [Moutai, MIXUE]
+evergreen:
+  expected: true
+  concept: "Long-channel economics require separating channel margin from end-consumer margin"
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - duplicate_note
+description: |
+  Cross-company synthesis. The reusable evergreen is the channel
+  economics *mechanism*, not any single company. The extractor
+  may produce 1 inbox note (one evergreen) or 2 (one inbox + one
+  evergreen). A single entity-only note is a recall miss.

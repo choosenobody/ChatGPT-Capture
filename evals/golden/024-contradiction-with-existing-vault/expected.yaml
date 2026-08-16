@@ -1,0 +1,23 @@
+level: librarian
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [move_to_learnings, create_evergreen]
+expected_belief_change: new
+expected_topics: [AI_inference, marginal_cost, contradiction]
+evergreen:
+  expected: true
+  concept: "AI inference marginal cost depends on scale regime and workload class"
+forbidden:
+  - silent_belief_overwrite
+hard_fail_conditions:
+  - silent_overwrite
+description: |
+  vault_before/ contains an evergreen saying AI inference has
+  meaningful marginal cost. The new conversation pushes the
+  opposite direction at scale. The librarian must:
+  1. Keep the existing evergreen untouched.
+  2. Add a *contradiction note* with both claims + evidence +
+     resolution-evidence checklist.
+  3. Optionally, refine the evergreen into a regime-dependent
+     statement IF the existing evergreen is updated with belief
+     history — never silently.

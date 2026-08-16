@@ -1,0 +1,18 @@
+level: librarian
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [move_to_learnings, update_entity]
+expected_belief_change: strengthened
+expected_entities: [Tencent]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - duplicate_note
+description: |
+  vault_before/ already contains a `Tencent AI economics` learning
+  note with confidence=60. The new conversation updates that note
+  to confidence=70. Direction must be `strengthened` (not new,
+  not unchanged). Confidence change must be appended to belief
+  history with date + evidence.

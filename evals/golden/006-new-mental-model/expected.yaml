@@ -1,0 +1,20 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [RONIC, reinvestment, value_creation]
+evergreen:
+  expected: true
+  concept: "High RONIC reduces reinvestment required for growth"
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - full_conversation_summary
+  - transient_numbers
+  - duplicate_note
+description: |
+  The headline case from the BG brief. The evergreen must capture
+  the *mechanism* (incremental ROIC > WACC), the *implication* (growth
+  may or may not create value), and the *failure conditions*
+  (accounting distortions, competitive entry). Not just the formula.

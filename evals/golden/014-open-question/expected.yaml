@@ -1,0 +1,17 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [Lenovo, AI_server, SSG, open_question]
+expected_entities: [Lenovo]
+evergreen:
+  expected: false
+epistemic:
+  must_not_promote_to_fact: true
+forbidden:
+  - hypothesis_to_fact
+description: |
+  The conversation yields an *open question*, not a fact. The
+  extractor must save it with `type: question` or equivalent, not
+  pin a number. Resolution evidence must be listed.
