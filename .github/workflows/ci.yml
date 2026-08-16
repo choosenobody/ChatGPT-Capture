@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install server test dependencies
+        run: pip install -r server/requirements-dev.txt
+      - name: Run server tests
+        working-directory: server
+        run: pytest -q
+      - name: Validate extension JSON
+        run: python -m json.tool extension/manifest.json >/dev/null
+      - name: Syntax-check extension JavaScript
+        run: |
+          node --check extension/content.js
+          node --check extension/options.js
+          node --check extension/service-worker.js
+      - name: Syntax-check Hermes helpers
+        run: |
+          python -m py_compile hermes/collect-idle-conversations.py hermes/prune-extracted.py
+          bash -n hermes/setup-cron.sh

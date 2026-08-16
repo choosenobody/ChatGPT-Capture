@@ -1,0 +1,16 @@
+services:
+  capture:
+    build: .
+    restart: unless-stopped
+    environment:
+      CAPTURE_TOKEN: ${CAPTURE_TOKEN}
+      CAPTURE_BUFFER_DIR: /data/chatgpt
+      MAX_MESSAGE_CHARS: ${MAX_MESSAGE_CHARS:-120000}
+    volumes:
+      # Bind the host buffer directory so Hermes cron (collect-idle,
+      # prune-extracted) can read raw JSONL outside the container. The host
+      # path is supplied via CAPTURE_BUFFER_HOST_DIR in .env; falls back to
+      # ./data for local dev.
+      - ${CAPTURE_BUFFER_HOST_DIR:-./data}:/data
+    ports:
+      - "127.0.0.1:8787:8787"
