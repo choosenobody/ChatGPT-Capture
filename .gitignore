@@ -1,0 +1,6 @@
+server/.env
+server/data/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
