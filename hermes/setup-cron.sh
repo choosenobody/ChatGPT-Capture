@@ -53,21 +53,21 @@ MONTHLY_PROMPT=$(cat "$REPO_ROOT/prompts/monthly-synthesis.md")
 
 hermes cron create "every 1h" "$EXTRACTOR_PROMPT" \
   --script chatgpt-capture-collect.py \
-  --skill obsidian \
+  --skill obsidian-vault \
   --workdir "$VAULT_DIR" \
   --deliver local \
   --name "ChatGPT Learning Extractor"
 
 hermes cron create "30 2 * * *" "$LIBRARIAN_PROMPT" \
-  --skill obsidian \
+  --skill obsidian-vault \
   --workdir "$VAULT_DIR" \
   --deliver local \
   --name "Knowledge Librarian"
 
 hermes cron create "0 8 1 * *" "$MONTHLY_PROMPT" \
-  --skill obsidian \
+  --skill obsidian-vault \
   --workdir "$VAULT_DIR" \
-  --deliver local \
+  --deliver origin \
   --name "Monthly Knowledge Synthesis"
 
 hermes cron create "15 3 * * *" \

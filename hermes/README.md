@@ -31,10 +31,18 @@ hermes cron run "ChatGPT Learning Extractor"
 hermes cron run "Knowledge Librarian"
 ```
 
-For the monthly review, change delivery later if you want it pushed to Telegram or another Hermes channel instead of local output:
+For the monthly review, it is delivered to the origin chat (this conversation) by default so the user is notified; change later if you want local-only:
 
 ```bash
-hermes cron edit "Monthly Knowledge Synthesis" --deliver telegram
+hermes cron edit "Monthly Knowledge Synthesis" --deliver local
 ```
+
+## Skill attachment
+
+`setup-cron.sh` attaches the `obsidian-vault` skill (the canonical Hermes skill that knows the layout of `00_Inbox/` / `10_Learnings/` / `20_Evergreen/` etc.). If your local skill is named differently, edit the three `--skill` flags in `setup-cron.sh` before running it.
+
+## Buffers and `setup-cron.sh`
+
+`setup-cron.sh` writes `buffer_dir` into `~/.hermes/chatgpt-capture.json` from its first CLI argument. The capture container must write to that same host directory. The default `server/docker-compose.yml` reads `CAPTURE_BUFFER_HOST_DIR` from `server/.env` for the bind mount and falls back to `./data` for local development. Set `CAPTURE_BUFFER_HOST_DIR` in `server/.env` to the same path you pass to `setup-cron.sh`.
 
 If you change the prompts in this repository, update the existing cron jobs or rerun setup only after removing the old jobs; job names are not inherently unique.

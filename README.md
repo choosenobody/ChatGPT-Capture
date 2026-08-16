@@ -35,10 +35,14 @@ The core design rule is **capture broadly, preserve narrowly**. Raw conversation
 ```bash
 cd server
 cp .env.example .env
-# edit .env and set a long random CAPTURE_TOKEN
+# Edit .env and set:
+#   CAPTURE_TOKEN=<a long random secret>
+#   CAPTURE_BUFFER_HOST_DIR=/root/ChatGPT-Capture-Buffer   # or any host path
 docker compose --env-file .env up -d --build
 curl http://127.0.0.1:8787/healthz
 ```
+
+`CAPTURE_BUFFER_HOST_DIR` is the directory on the VPS that the container bind-mounts into `/data`. Hermes cron reads the same path via `~/.hermes/chatgpt-capture.json`, so keep them in sync.
 
 For production, put Caddy/Nginx/Cloudflare Tunnel in front of `127.0.0.1:8787` and expose only HTTPS.
 
@@ -51,26 +55,26 @@ Do **not** expose the port directly to the internet.
 3. Click **Load unpacked**.
 4. Select the `extension/` directory.
 5. Open the extension details -> Extension options.
-6. Configure your HTTPS Hermes endpoint and the same bearer token. Chrome will ask for access only to that endpoint origin.
+6. Configure your HTTPS Hermes endpoint (e.g. `https://<your-tunnel>.trycloudflare.com`) and the same bearer token. Chrome will ask for access only to that endpoint origin.
 7. Enable capture and save. The token remains in local extension storage and is not synced through Chrome Sync.
 
 Then open ChatGPT normally. Completed turns will be POSTed to:
 
 ```text
 POST /v1/capture
-Authorization: Bearer <token>
+Authorization: Bearer ***
 ```
 
 ## 3. Automate extraction and knowledge maintenance with Hermes
 
-Hermes Agent can schedule both LLM-driven cron jobs and zero-token script-only jobs, and can attach the `obsidian` skill to scheduled work. This repo includes a setup script that creates the full unattended pipeline.
+Hermes Agent can schedule both LLM-driven cron jobs and zero-token script-only jobs, and can attach the `obsidian-vault` skill to scheduled work. This repo includes a setup script that creates the full unattended pipeline.
 
 Prerequisites:
 
 - the capture buffer is readable on the Hermes host;
 - the Obsidian vault is present on that host (for example via Obsidian Headless Sync);
 - Hermes gateway/cron is installed and running;
-- the Hermes `obsidian` skill is available.
+- the Hermes `obsidian-vault` skill is available.
 
 Run:
 
@@ -144,6 +148,20 @@ On the VPS, Hermes can write Markdown directly into the synced vault. Obsidian-s
 - The redactor is best-effort, not a formal DLP system.
 - Never intentionally paste seed phrases, private keys, passwords, or OAuth tokens into ChatGPT.
 - Treat raw conversation buffers as sensitive and short-lived.
+
+## Manual Chrome-extension test plan
+
+After installing the unpacked extension and configuring endpoint + token:
+
+1. **Normal capture**: open a new ChatGPT conversation, send a short user prompt, wait for the assistant reply to finish, then check `/root/ChatGPT-Capture-Buffer/chatgpt/<id>/turns.jsonl` on the VPS — one record should appear.
+2. **Streaming**: send a long prompt (e.g. "Explain in 800 words..."), confirm nothing is sent while the Stop button is visible, and exactly one record appears when the response ends.
+3. **Multiple turns in one conversation**: send three more rounds, confirm four records with monotonic turn_ids.
+4. **Refresh**: hard-refresh the ChatGPT tab, confirm no duplicate captures (browser-side `seen` set + server-side `.seen` both gate this).
+5. **Switch conversation**: click a different conversation in the sidebar, confirm a new `<conversation-id>/` directory appears.
+6. **New conversation**: click "New chat", send one prompt, confirm capture works.
+7. **Redaction**: paste a fake API key (`sk-abc...1234567890`), confirm the saved JSONL on the VPS contains `[REDACTED_OPENAI_KEY]` instead.
+
+If any test fails, check `/var/log/cloudflared/tunnel.log` and `docker logs server-capture-1` for the receiver side.
 
 ## Known V1 limitations
 
