@@ -1,0 +1,20 @@
+level: extractor
+material_learning: true
+expected_learning_count: { min: 1, max: 1 }
+expected_action: [create_learning]
+expected_belief_change: new
+expected_topics: [growth, value_creation, ROIC]
+evergreen:
+  expected: true
+  concept: "Revenue growth is neither necessary nor sufficient for value creation"
+epistemic:
+  must_not_promote_to_fact: false
+forbidden:
+  - duplicate_note
+  - full_conversation_summary
+description: |
+  Distinct evergreen from case 006. This one is a *principle*
+  ("don't pay a growth multiple — pay an economics multiple"), not
+  a formula. A naive extractor might collapse 006 and 007 into a
+  single note. That would be a near-duplicate dedup miss at the
+  librarian level.

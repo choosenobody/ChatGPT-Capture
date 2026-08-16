@@ -1,0 +1,3217 @@
+{
+  "timestamp": "2026-08-16T11:13:16.759243+00:00",
+  "adapter": "mock-stub",
+  "metrics": {
+    "cases_total": 24,
+    "cases_passed": 24,
+    "cases_failed": 0,
+    "cases_l1_extractor": 16,
+    "cases_l2_librarian": 8,
+    "cases_hard_fail_triggered": 0,
+    "overall_score": 92.75,
+    "materiality_precision_pct": 87.5,
+    "materiality_recall_pct": 95.83,
+    "false_positive_rate_pct": 12.5,
+    "false_negative_rate_pct": 4.17,
+    "dedup_success_rate_pct": 100.0,
+    "duplicate_rate_pct": 0.0,
+    "belief_update_accuracy_pct": 50.0,
+    "epistemic_severe_errors": 0,
+    "average_notes_per_material_conversation": 0.92,
+    "compression_ratio": {
+      "raw_conversations": 24,
+      "candidate_learnings": 22,
+      "retained_learnings": 1,
+      "evergreen_concepts": 0
+    },
+    "adapter": "mock-stub",
+    "per_case": [
+      {
+        "case_id": "001-trivial-weather",
+        "conversation_rows": 2,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 0,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "001-trivial-weather",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "trivial_evergreen"
+          ],
+          "total_score": 100.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 0,
+          "notes_expected_min": 0,
+          "notes_expected_max": 0,
+          "expected_actions": [
+            "no_note"
+          ],
+          "actual_actions": [
+            "no_note"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 0,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": null
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "002-simple-translation",
+        "conversation_rows": 2,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 0,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "002-simple-translation",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "trivial_evergreen"
+          ],
+          "total_score": 100.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 0,
+          "notes_expected_min": 0,
+          "notes_expected_max": 0,
+          "expected_actions": [
+            "no_note"
+          ],
+          "actual_actions": [
+            "no_note"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 0,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": null
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "003-logistics",
+        "conversation_rows": 2,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 0,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "003-logistics",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "trivial_evergreen"
+          ],
+          "total_score": 100.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 0,
+          "notes_expected_min": 0,
+          "notes_expected_max": 0,
+          "expected_actions": [
+            "no_note"
+          ],
+          "actual_actions": [
+            "no_note"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 0,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": null
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "004-long-but-no-learning",
+        "conversation_rows": 5,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 317,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "004-long-but-no-learning",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "trivial_evergreen",
+            "raw_full_conversation"
+          ],
+          "total_score": 95.0,
+          "breakdown": {
+            "materiality_precision": 15.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 0,
+          "notes_expected_max": 0,
+          "expected_actions": [
+            "no_note"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 0,
+            "precision_misses": 1,
+            "recall_hits": 0,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/004-long-but-no-learning - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "005-short-high-value-insight",
+        "conversation_rows": 2,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 319,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "005-short-high-value-insight",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "credential_leak"
+          ],
+          "total_score": 95.0,
+          "breakdown": {
+            "materiality_precision": 15.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 0,
+          "notes_expected_max": 0,
+          "expected_actions": [
+            "no_note"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 0,
+            "precision_misses": 1,
+            "recall_hits": 0,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/005-short-high-value-insight - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "006-new-mental-model",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 301,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "006-new-mental-model",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 84.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected new, observed unchanged"
+            ],
+            "expected": "new",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "High RONIC reduces reinvestment required for growth",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/006-new-mental-model - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "007-investment-causal-model",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 318,
+        "evergreen_observed": true,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "007-investment-causal-model",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 92.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "new",
+            "observed": "new"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "Revenue growth is neither necessary nor sufficient for value creation",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/007-investment-causal-model - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "008-existing-insight-repeated",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 1416,
+        "evergreen_observed": true,
+        "new_learnings": 2,
+        "new_evergreen": 0,
+        "new_entities": 2,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "008-existing-insight-repeated",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "duplicate_evergreen"
+          ],
+          "total_score": 79.5,
+          "breakdown": {
+            "materiality_precision": 15.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 2,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings",
+            "update_entity",
+            "create_evergreen"
+          ],
+          "actual_actions": [
+            "move_to_learnings",
+            "update_entity"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 0,
+            "precision_misses": 1,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected unchanged, observed new"
+            ],
+            "expected": "unchanged",
+            "observed": "new"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "Channel migration is not the same as end-demand weakness",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "30_Entities/008-existing-insight-repeated - stub.md",
+          "30_Entities/2026-07-04 - channel migration.md"
+        ],
+        "vault_files_modified": [
+          "10_Learnings/008-existing-insight-repeated - stub.md",
+          "10_Learnings/2026-07-04 - channel migration.md"
+        ]
+      },
+      {
+        "case_id": "009-existing-insight-strengthened",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 340,
+        "evergreen_observed": false,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "009-existing-insight-strengthened",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings",
+            "update_entity"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected strengthened, observed unchanged"
+            ],
+            "expected": "strengthened",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/009-existing-insight-strengthened - stub.md"
+        ]
+      },
+      {
+        "case_id": "010-belief-weakened",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 321,
+        "evergreen_observed": false,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "010-belief-weakened",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "silent_overwrite"
+          ],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings",
+            "update_entity"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected weakened, observed unchanged"
+            ],
+            "expected": "weakened",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/010-belief-weakened - stub.md"
+        ]
+      },
+      {
+        "case_id": "011-belief-reversed",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 317,
+        "evergreen_observed": false,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "011-belief-reversed",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "silent_overwrite"
+          ],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings",
+            "update_entity"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected reversed, observed unchanged"
+            ],
+            "expected": "reversed",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/011-belief-reversed - stub.md"
+        ]
+      },
+      {
+        "case_id": "012-conflicting-evidence",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 326,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "012-conflicting-evidence",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "hypothesis_promoted"
+          ],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected new, observed unchanged"
+            ],
+            "expected": "new",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/012-conflicting-evidence - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "013-hypothesis-not-fact",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 324,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "013-hypothesis-not-fact",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 2,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected new, observed unchanged"
+            ],
+            "expected": "new",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/013-hypothesis-not-fact - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "014-open-question",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 316,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "014-open-question",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected new, observed unchanged"
+            ],
+            "expected": "new",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/014-open-question - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "015-company-specific-only",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 315,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "015-company-specific-only",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 100.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning",
+            "update_entity"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/015-company-specific-only - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "016-cross-company-evergreen",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 324,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "016-cross-company-evergreen",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 92.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 2,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "new",
+            "observed": "new"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "Long-channel economics require separating channel margin from end-consumer margin",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/016-cross-company-evergreen - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "017-multiple-insights-one-conversation",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 340,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "017-multiple-insights-one-conversation",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 87.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 5.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 3,
+          "notes_expected_max": 4,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 0,
+            "recall_misses": 1
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected new, observed unchanged"
+            ],
+            "expected": "new",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/017-multiple-insights-one-conversation - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "018-noisy-long-conversation",
+        "conversation_rows": 5,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 325,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "018-noisy-long-conversation",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "raw_full_conversation"
+          ],
+          "total_score": 92.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "new",
+            "observed": "new"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "The next-wave AI moat shifts from model layer to agent harness + integrations",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/018-noisy-long-conversation - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "019-decision-changing-insight",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 314,
+        "evergreen_observed": false,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "019-decision-changing-insight",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "auto_decision"
+          ],
+          "total_score": 92.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "update_decision"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected weakened, observed unchanged"
+            ],
+            "expected": "weakened",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/019-decision-changing-insight - stub.md"
+        ]
+      },
+      {
+        "case_id": "020-near-duplicate-wording",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 314,
+        "evergreen_observed": true,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "020-near-duplicate-wording",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "duplicate_evergreen"
+          ],
+          "total_score": 92.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 0,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "High RONIC reduces reinvestment required for growth",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/020-near-duplicate-wording - stub.md"
+        ]
+      },
+      {
+        "case_id": "021-fact-update-not-evergreen",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 307,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "021-fact-update-not-evergreen",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "hypothesis_promoted"
+          ],
+          "total_score": 100.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning",
+            "update_entity"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "unchanged",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/021-fact-update-not-evergreen - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "022-user-wrong-model-corrected",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 331,
+        "evergreen_observed": true,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "022-user-wrong-model-corrected",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "silent_overwrite"
+          ],
+          "total_score": 84.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings",
+            "create_evergreen"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected reversed, observed new"
+            ],
+            "expected": "reversed",
+            "observed": "new"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "Incremental economics — not revenue growth — determine shareholder value creation",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/022-user-wrong-model-corrected - stub.md"
+        ]
+      },
+      {
+        "case_id": "023-uncertain-conclusion",
+        "conversation_rows": 1,
+        "vault_before_files": 0,
+        "raw_text_chars_written": 318,
+        "evergreen_observed": false,
+        "new_learnings": 0,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 1,
+        "case_score": {
+          "case_id": "023-uncertain-conclusion",
+          "level": "extractor",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [],
+          "total_score": 100.0,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 15.0,
+            "dedup": 15.0,
+            "evergreen": 10.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "create_learning"
+          ],
+          "actual_actions": [
+            "create_learning"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": false,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [],
+            "expected": "new",
+            "observed": "new"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [],
+            "expected_concept": null,
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [
+          "00_Inbox/023-uncertain-conclusion - stub.md"
+        ],
+        "vault_files_modified": []
+      },
+      {
+        "case_id": "024-contradiction-with-existing-vault",
+        "conversation_rows": 1,
+        "vault_before_files": 2,
+        "raw_text_chars_written": 346,
+        "evergreen_observed": false,
+        "new_learnings": 1,
+        "new_evergreen": 0,
+        "new_entities": 0,
+        "new_decisions": 0,
+        "new_inbox": 0,
+        "case_score": {
+          "case_id": "024-contradiction-with-existing-vault",
+          "level": "librarian",
+          "pass": true,
+          "hard_fail_triggered": false,
+          "hard_fail_reasons": [],
+          "hard_fail_coverage": [
+            "silent_overwrite"
+          ],
+          "total_score": 84.5,
+          "breakdown": {
+            "materiality_precision": 20.0,
+            "materiality_recall": 10.0,
+            "epistemic": 20.0,
+            "belief": 7.5,
+            "dedup": 15.0,
+            "evergreen": 2.0,
+            "compression": 5.0,
+            "linking": 5.0
+          },
+          "notes_created": 1,
+          "notes_expected_min": 1,
+          "notes_expected_max": 1,
+          "expected_actions": [
+            "move_to_learnings",
+            "create_evergreen"
+          ],
+          "actual_actions": [
+            "move_to_learnings"
+          ],
+          "evergreen_observed": false,
+          "evergreen_expected": true,
+          "forbidden_observed": [],
+          "material_section": {
+            "precision_hits": 1,
+            "precision_misses": 0,
+            "recall_hits": 1,
+            "recall_misses": 0
+          },
+          "epistemic_section": {
+            "notes": []
+          },
+          "belief_section": {
+            "notes": [
+              "belief_change mismatch: expected new, observed unchanged"
+            ],
+            "expected": "new",
+            "observed": "unchanged"
+          },
+          "dedup_section": {
+            "notes": []
+          },
+          "evergreen_section": {
+            "notes": [
+              "expected evergreen but none observed"
+            ],
+            "expected_concept": "AI inference marginal cost depends on scale regime and workload class",
+            "observed": false
+          },
+          "compression_section": {},
+          "linking_section": {}
+        },
+        "vault_files_created": [],
+        "vault_files_modified": [
+          "10_Learnings/024-contradiction-with-existing-vault - stub.md"
+        ]
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "001-trivial-weather",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "trivial_evergreen"
+      ],
+      "total_score": 100.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 0,
+      "notes_expected_min": 0,
+      "notes_expected_max": 0,
+      "expected_actions": [
+        "no_note"
+      ],
+      "actual_actions": [
+        "no_note"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 0,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": null
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "002-simple-translation",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "trivial_evergreen"
+      ],
+      "total_score": 100.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 0,
+      "notes_expected_min": 0,
+      "notes_expected_max": 0,
+      "expected_actions": [
+        "no_note"
+      ],
+      "actual_actions": [
+        "no_note"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 0,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": null
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "003-logistics",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "trivial_evergreen"
+      ],
+      "total_score": 100.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 0,
+      "notes_expected_min": 0,
+      "notes_expected_max": 0,
+      "expected_actions": [
+        "no_note"
+      ],
+      "actual_actions": [
+        "no_note"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 0,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": null
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "004-long-but-no-learning",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "trivial_evergreen",
+        "raw_full_conversation"
+      ],
+      "total_score": 95.0,
+      "breakdown": {
+        "materiality_precision": 15.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 0,
+      "notes_expected_max": 0,
+      "expected_actions": [
+        "no_note"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 0,
+        "precision_misses": 1,
+        "recall_hits": 0,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "005-short-high-value-insight",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "credential_leak"
+      ],
+      "total_score": 95.0,
+      "breakdown": {
+        "materiality_precision": 15.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 0,
+      "notes_expected_max": 0,
+      "expected_actions": [
+        "no_note"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 0,
+        "precision_misses": 1,
+        "recall_hits": 0,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "006-new-mental-model",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 84.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected new, observed unchanged"
+        ],
+        "expected": "new",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "High RONIC reduces reinvestment required for growth",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "007-investment-causal-model",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 92.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "new",
+        "observed": "new"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "Revenue growth is neither necessary nor sufficient for value creation",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "008-existing-insight-repeated",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "duplicate_evergreen"
+      ],
+      "total_score": 79.5,
+      "breakdown": {
+        "materiality_precision": 15.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 2,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings",
+        "update_entity",
+        "create_evergreen"
+      ],
+      "actual_actions": [
+        "move_to_learnings",
+        "update_entity"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 0,
+        "precision_misses": 1,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected unchanged, observed new"
+        ],
+        "expected": "unchanged",
+        "observed": "new"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "Channel migration is not the same as end-demand weakness",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "009-existing-insight-strengthened",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings",
+        "update_entity"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected strengthened, observed unchanged"
+        ],
+        "expected": "strengthened",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "010-belief-weakened",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "silent_overwrite"
+      ],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings",
+        "update_entity"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected weakened, observed unchanged"
+        ],
+        "expected": "weakened",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "011-belief-reversed",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "silent_overwrite"
+      ],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings",
+        "update_entity"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected reversed, observed unchanged"
+        ],
+        "expected": "reversed",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "012-conflicting-evidence",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "hypothesis_promoted"
+      ],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected new, observed unchanged"
+        ],
+        "expected": "new",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "013-hypothesis-not-fact",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 2,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected new, observed unchanged"
+        ],
+        "expected": "new",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "014-open-question",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected new, observed unchanged"
+        ],
+        "expected": "new",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "015-company-specific-only",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 100.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning",
+        "update_entity"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "016-cross-company-evergreen",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 92.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 2,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "new",
+        "observed": "new"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "Long-channel economics require separating channel margin from end-consumer margin",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "017-multiple-insights-one-conversation",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 87.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 5.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 3,
+      "notes_expected_max": 4,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 0,
+        "recall_misses": 1
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected new, observed unchanged"
+        ],
+        "expected": "new",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "018-noisy-long-conversation",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "raw_full_conversation"
+      ],
+      "total_score": 92.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "new",
+        "observed": "new"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "The next-wave AI moat shifts from model layer to agent harness + integrations",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "019-decision-changing-insight",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "auto_decision"
+      ],
+      "total_score": 92.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "update_decision"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected weakened, observed unchanged"
+        ],
+        "expected": "weakened",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "020-near-duplicate-wording",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "duplicate_evergreen"
+      ],
+      "total_score": 92.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 0,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "High RONIC reduces reinvestment required for growth",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "021-fact-update-not-evergreen",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "hypothesis_promoted"
+      ],
+      "total_score": 100.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning",
+        "update_entity"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "unchanged",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "022-user-wrong-model-corrected",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "silent_overwrite"
+      ],
+      "total_score": 84.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings",
+        "create_evergreen"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected reversed, observed new"
+        ],
+        "expected": "reversed",
+        "observed": "new"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "Incremental economics — not revenue growth — determine shareholder value creation",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "023-uncertain-conclusion",
+      "level": "extractor",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [],
+      "total_score": 100.0,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 15.0,
+        "dedup": 15.0,
+        "evergreen": 10.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "create_learning"
+      ],
+      "actual_actions": [
+        "create_learning"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": false,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [],
+        "expected": "new",
+        "observed": "new"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [],
+        "expected_concept": null,
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    },
+    {
+      "case_id": "024-contradiction-with-existing-vault",
+      "level": "librarian",
+      "pass": true,
+      "hard_fail_triggered": false,
+      "hard_fail_reasons": [],
+      "hard_fail_coverage": [
+        "silent_overwrite"
+      ],
+      "total_score": 84.5,
+      "breakdown": {
+        "materiality_precision": 20.0,
+        "materiality_recall": 10.0,
+        "epistemic": 20.0,
+        "belief": 7.5,
+        "dedup": 15.0,
+        "evergreen": 2.0,
+        "compression": 5.0,
+        "linking": 5.0
+      },
+      "notes_created": 1,
+      "notes_expected_min": 1,
+      "notes_expected_max": 1,
+      "expected_actions": [
+        "move_to_learnings",
+        "create_evergreen"
+      ],
+      "actual_actions": [
+        "move_to_learnings"
+      ],
+      "evergreen_observed": false,
+      "evergreen_expected": true,
+      "forbidden_observed": [],
+      "material_section": {
+        "precision_hits": 1,
+        "precision_misses": 0,
+        "recall_hits": 1,
+        "recall_misses": 0
+      },
+      "epistemic_section": {
+        "notes": []
+      },
+      "belief_section": {
+        "notes": [
+          "belief_change mismatch: expected new, observed unchanged"
+        ],
+        "expected": "new",
+        "observed": "unchanged"
+      },
+      "dedup_section": {
+        "notes": []
+      },
+      "evergreen_section": {
+        "notes": [
+          "expected evergreen but none observed"
+        ],
+        "expected_concept": "AI inference marginal cost depends on scale regime and workload class",
+        "observed": false
+      },
+      "compression_section": {},
+      "linking_section": {}
+    }
+  ]
+}
